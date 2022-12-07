@@ -1,0 +1,26 @@
+---
+import MenuItem from "./MenuItem.astro";
+
+const menus = [
+  {
+    href: "#home",
+    title: "Beranda",
+  },
+  {
+    href: "#about",
+    title: "Tentang Kami",
+  },
+  {
+    href: "#blog",
+    title: "Blog",
+  },
+  {
+    href: "#kontak",
+    title: "Kontak",
+  },
+];
+---
+
+<div class="gap-x-16 flex">
+  {menus.map((i) => <MenuItem href={i.href}>{i.title}</MenuItem>)}
+</div>
